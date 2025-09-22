@@ -5,49 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Hrishith G</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Hrishith G</a>
-      <div class="collapse navbar-collapse">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">Hrishith G</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active fw-semibold text-primary" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container animate__animated animate__fadeInUp">
-      <h2 class="section-title">Contact Me</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <form class="contact-form">
-            <input type="text" class="form-control" placeholder="Name" required>
-            <input type="email" class="form-control" placeholder="Email" required>
-            <input type="tel" class="form-control" placeholder="Mobile" required>
-            <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
-            <button class="btn btn-primary w-100">Submit</button>
-          </form>
-        </div>
-        <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
-          <p>Or connect with me directly:</p>
-          <div class="social-icons">
-            <a href="mailto:hrishithbhat@gmail.com"><i class="bi bi-envelope"></i></a>
-            <a href="https://share.google/a79QGRWtTUeWxLyNA" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.instagram.com/_hrishith_bhat_?igsh=MXFsNGg1andwaW81YQ==" target="_blank"><i class="bi bi-instagram"></i></a>
+  <!-- Contact Section -->
+  <section class="py-5 mt-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row g-4">
+        
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm p-4">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Mobile" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
           </div>
         </div>
+
+        <!-- Social & Info -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm p-4 text-center">
+            <h5 class="mb-3">Or connect with me directly:</h5>
+            <div class="d-flex justify-content-center gap-4 fs-3 mb-3">
+              <a href="mailto:hrishithbhat@gmail.com" class="text-decoration-none text-primary"><i class="bi bi-envelope"></i></a>
+              <a href="https://share.google/a79QGRWtTUeWxLyNA" target="_blank" class="text-decoration-none text-primary"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/_hrishith_bhat_?igsh=MXFsNGg1andwaW81YQ==" target="_blank" class="text-decoration-none text-primary"><i class="bi bi-instagram"></i></a>
+            </div>
+            <p class="text-muted">I’ll get back to you as soon as possible 🚀</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
